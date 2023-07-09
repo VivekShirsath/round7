@@ -11,7 +11,7 @@ function App() {
   const {data,country,setCountry,destination,setDestination} = useData();
   console.log(destination)
   return (
-    <>
+    <div className=' text-lg'>
      <Routes>
       <Route>
         <Route path="/" element={<Home/>}/>
@@ -20,7 +20,7 @@ function App() {
         <Route path="/details/:id" element={<Details value={"slow"}/>}/>
       </Route>
      </Routes>
-    </>
+    </div>
   )
 }
 
