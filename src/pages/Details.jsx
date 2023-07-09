@@ -6,11 +6,9 @@ import { NavLink } from "react-router-dom";
 export const Details = () => {
     const {id} = useParams();
     const {data,country,setCountry,destination,setDestination} = useData();
-    const new1 = JSON?.parse(localStorage?.getItem('destination'))
-    console.log(new1);
-  // const unique  = destination.destinations.find((c) => c.id == id);
-  const unique = new1.data.destinations.find((c) => c.id == id);
-  // console.log(destination)
+
+  const unique  = destination.destinations.find((c) => c.id == id);
+  console.log(destination)
     return(
         <div>
           <div>
@@ -26,6 +24,7 @@ export const Details = () => {
                 <h3>Opening-Hours:{unique.openingHours}</h3>
                 <h3>Ticket Price:{unique.ticketPrice}
 </h3>
+               <a href="https://round7.vercel.app/" target="_blank">Website </a>
             </div>
           </div>
         </div>
