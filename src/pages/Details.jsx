@@ -24,7 +24,7 @@ export const Details = () => {
                 <h3>Opening-Hours:{unique.openingHours}</h3>
                 <h3>Ticket Price:{unique.ticketPrice}
 </h3>
-               <a href="https://round7.vercel.app/" target="_blank">Website </a>
+               <a href={unique.website} target="_blank">Website </a>
             </div>
           </div>
         </div>
